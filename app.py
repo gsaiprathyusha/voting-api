@@ -10,8 +10,6 @@ class Home(Resource):
         return {"message" : "Deployed!"}
 
 api.add_resource(Home, "/")
-@app.route('/hello', methods=['GET'])
-def home():
-    return "hello"
+
 
 #app.run(debug=True)
