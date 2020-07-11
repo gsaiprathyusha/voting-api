@@ -5,10 +5,13 @@ app = Flask(__name__)
 api = Api(app)
 
 
-class Home(Resource):
+'''class Home(Resource):
     def get(self):
         return {"message" : "Deployed!"}
 
-api.add_resource(Home, "/")
+api.add_resource(Home, "/")'''
+@app.route('/', methods=['GET'])
+def home():
+    return "hello"
 
 app.run(debug=True)
