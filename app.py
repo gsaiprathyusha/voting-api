@@ -14,4 +14,4 @@ api.add_resource(Home, "/")'''
 def home():
     return "hello"
 
-app.run(debug=True)
+#app.run(debug=True)
